@@ -34,7 +34,7 @@ const DesignerList: React.FC<DesignerListProps> = ({
   return (
     <div className="pb-20">
       {filteredDesigners.map((designer, index) => (
-        <div key={designer.id} className={index % 2 === 0 ? 'bg-white' : 'bg-[#FAFAFA]'}>
+        <div key={designer.id} className={`p-4 ${index % 2 === 0 ? 'bg-[#ffffff]' : 'bg-[#fffaf0]'}`}>
           <DesignerCard
             designer={designer}
             isShortlisted={shortlistedIds.includes(designer.id)}
