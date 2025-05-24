@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.metrics {
+  @apply grid grid-cols-3 gap-4 mt-4;
+}
+
+.metric {
+  @apply text-center;
+}
+
+.metric-value {
+  @apply text-xl font-semibold text-[#1A1A1A];
+}
+
+.metric-label {
+  @apply text-xs text-[#666666];
+}
+
+.phone-number {
+  @apply flex items-center text-sm text-[#1A1A1A] mt-1;
+}
+
+.action-buttons {
+  @apply flex justify-between mt-4;
+}
+
+.action-button {
+  @apply flex flex-col items-center text-xs text-[#666666];
+}
+
+.action-button.active {
+  @apply text-[#FF385C];
+}
+
+.nav-bar {
+  @apply fixed bottom-0 left-0 right-0 bg-white border-t border-[#E5E5E5] px-4 py-2;
+}
+
+.nav-items {
+  @apply grid grid-cols-5 gap-4;
+}
+
+.nav-item {
+  @apply flex flex-col items-center text-xs text-[#666666];
+}
+
+.nav-item.active {
+  @apply text-[#FF385C];
+}
+
+.filter-toggle {
+  @apply sticky top-0 bg-white px-4 py-3 border-b border-[#E5E5E5] z-10;
+}
+
+.filter-button {
+  @apply flex items-center px-3 py-1.5 rounded-full text-sm;
+}
+
+.filter-button.active {
+  @apply bg-[#FFE8EC] text-[#FF385C] border border-[#FFD1DC];
+}
+
+.filter-button.inactive {
+  @apply bg-[#F5F5F5] text-[#666666] border border-[#E5E5E5];
+}

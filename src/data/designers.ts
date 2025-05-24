@@ -1,0 +1,81 @@
+export interface Designer {
+  id: number;
+  name: string;
+  location: string;
+  profile_picture: string;
+  description: string;
+  isAvailable: boolean;
+  rating: number;
+  projects: number;
+  years: number;
+  price: number;
+  phone: string[];
+}
+
+export const designers: Designer[] = [
+  {
+    id: 1,
+    name: "Epic Designs",
+    location: "Bangalore, India",
+    profile_picture: "https://images.pexels.com/photos/1537317/pexels-photo-1537317.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Passionate team of 4 designers working out of Bangalore with an experience of 8 years.",
+    isAvailable: true,
+    rating: 4,
+    projects: 57,
+    years: 8,
+    price: 2,
+    phone: ["+91-9845322853", "+91-9845322854"]
+  },
+  {
+    id: 2,
+    name: "Studio-D3",
+    location: "Bangalore, India",
+    profile_picture: "https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Passionate team of 4 designers working out of Bangalore with an experience of 6 years.",
+    isAvailable: true,
+    rating: 4,
+    projects: 43,
+    years: 6,
+    price: 3,
+    phone: ["+91-9845322853", "+91-9845322854"]
+  },
+  {
+    id: 3,
+    name: "House of Designs",
+    location: "Mumbai, India",
+    profile_picture: "https://images.pexels.com/photos/3771823/pexels-photo-3771823.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Luxury minimalist interior design team with a focus on functional spaces.",
+    isAvailable: true,
+    rating: 5,
+    projects: 87,
+    years: 10,
+    price: 3,
+    phone: ["+91-9876543210", "+91-9876543211"]
+  },
+  {
+    id: 4,
+    name: "Modern Interiors",
+    location: "Delhi, India",
+    profile_picture: "https://images.pexels.com/photos/3771831/pexels-photo-3771831.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Contemporary design solutions for urban homes and commercial spaces.",
+    isAvailable: true,
+    rating: 4,
+    projects: 63,
+    years: 7,
+    price: 2,
+    phone: ["+91-9898989898", "+91-9898989899"]
+  },
+  {
+    id: 5,
+    name: "Harmony Designs",
+    location: "Pune, India",
+    profile_picture: "https://images.pexels.com/photos/1643317/pexels-photo-1643317.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Blending traditional elements with modern aesthetics for balanced interiors.",
+    isAvailable: true,
+    rating: 4,
+    projects: 42,
+    years: 5,
+    price: 1,
+    phone: ["+91-9812345678", "+91-9812345679"]
+  }
+];
